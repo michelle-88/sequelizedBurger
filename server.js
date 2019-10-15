@@ -25,7 +25,7 @@ var routes = require("./controllers/burgers_controller");
 app.use(routes);
 
 // Sync our models to create necessary table(s) in db and then start up the server
-db.sequelize.sync({force: true}).then(function() {
+db.sequelize.sync().then(function() {
     app.listen(PORT, function() {
         console.log(`Server listening on: http://localhost:${PORT}`);
     });
