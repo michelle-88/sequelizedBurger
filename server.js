@@ -5,6 +5,9 @@ var PORT = process.env.PORT || 8080;
 
 var app = express();
 
+// Require sequelize models for syncing
+var db = require("./models");
+
 app.use(express.static("public"));
 
 app.use(express.urlencoded({ extended: true }));
@@ -21,6 +24,9 @@ var routes = require("./controllers/burgers_controller");
 
 app.use(routes);
 
-app.listen(PORT, function() {
-    console.log(`Server listening on: http://localhost:${PORT}`);
+// Sync our models to create necessary table(s) in db and then start up the server
+db.sequelize.sync({force: true}).then(function() {
+    app.listen(PORT, function() {
+        console.log(`Server listening on: http://localhost:${PORT}`);
+    });
 });

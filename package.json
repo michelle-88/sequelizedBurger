@@ -1,29 +1,29 @@
 {
-  "name": "eat-da-burger",
+  "name": "sequelized-burger",
   "version": "1.0.0",
-  "description": "A full-stack application that allows users to add and remove burgers from a dynamic list.",
+  "description": "A full-stack app using Sequelize that allows users to add and remove burgers from a dynamic list.",
   "main": "server.js",
   "scripts": {
     "test": "test"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/michelle-88/Eat-Da-Burger.git"
+    "url": "git+https://github.com/michelle-88/sequelizedBurger.git"
   },
   "keywords": [
     "node",
-    "mysql",
+    "mysql2",
     "express",
-    "orm",
+    "sequelize",
     "javascript",
     "handlebars"
   ],
   "author": "Michelle Mesorana",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/michelle-88/Eat-Da-Burger/issues"
+    "url": "https://github.com/michelle-88/sequelizedBurger/issues"
   },
-  "homepage": "https://github.com/michelle-88/Eat-Da-Burger#readme",
+  "homepage": "https://github.com/michelle-88/sequelizedBurger#readme",
   "dependencies": {
     "express": "^4.17.1",
     "express-handlebars": "^3.1.0",
