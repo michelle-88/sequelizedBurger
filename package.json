@@ -26,7 +26,7 @@
   "homepage": "https://github.com/michelle-88/sequelizedBurger#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "express-handlebars": "^3.1.0",
+    "express-handlebars": "^5.3.1",
     "mysql2": "^1.7.0",
     "sequelize": "^5.19.6"
   }
